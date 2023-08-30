@@ -1,5 +1,5 @@
 <template>
-<div class="h-screen flex items-center justify-center bg-gradient-to-t bg-gray-500">
+<div class="h-screen flex items-center justify-center bg-gradient-to-t bg">
   <div class="dark:bg-slate-800 p-3 rounded-lg" v-if="errorMsg.length > 0">
     <p class="text-white">{{ errorMsg }}</p>
     <button @click="returnToHome()" type="button" class=" mt-3 py-3.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Search</button>
@@ -62,3 +62,8 @@ export default {
   }
 }
 </script>
+<style>
+.bg{
+  background-image: url(../assets/weather.jpg);
+}
+</style>
